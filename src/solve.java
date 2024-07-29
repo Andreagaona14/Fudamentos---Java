@@ -1,244 +1,249 @@
+import java.util.Scanner;
+
 public class solve {
-    public static void main(String[] args) {
-// CASTEO
-        // 1.¿Cuál será el resultado de la siguiente operación?
-       /* int x = (int) 5.89 + (int) 3.45;
-        System.out.println(x);
-        // El resultado es 8
-
-        double z = (double) 5.89 + (double) 3.45;
-        System.out.println(z);
-        */
-        // El resultado es 9.34
-
-
-        //2.  Dado char c = 'A';, ¿cómo convertirías c a su valor ASCII como un int?
-        /*char myChar = 'A';
-        int myInt = (int) myChar;
-        System.out.println(myInt);
-         */
-        // El resultado sera 65 (ASCII de 'A')
-
-
-        // 3. ¿Qué valor se imprimirá?
-       /* double d = 100.04;
-        long l = (long)d;
-        int i = (int)l;
-        System.out.println(i);
-        */
-        // El resultado es 100
-
-        // 4. Escribe código para convertir un String que contiene un número a un int.
-      /* char myChar = 'E';
-        int myInt = (int) myChar;
-        System.out.println(myInt);
-        // El resultado es 69
-       */
-
-        // 5. ¿Cuál es el resultado de (int) (char) (byte) -1?
-        /*int result = (int) (char) (byte) -1;
-        System.out.println("Resultado: " + result);
-         */
-        //El resultado es 65535
-
-        // 6. Convierte el número 65 a un char. ¿Qué carácter obtienes?
-       /* int myInt = 65;
-        char myChar = (char) myInt;
-        System.out.println(myChar);
-        */
-        // El resultado es A
-
-        // 7. ¿Qué sucede si intentas asignar un long a un int sin casteo explícito?
-        /*long c = 180;
-        int z = (int)c;
-        System.out.println(z);
-         */
-        //El resultado es 180
-
-        //8. Escribe código para convertir un float a un String.
-        /*float v = 17;
-        String m = "" + v;
-        System.out.println(m);
-        */
-        // El resultado es 17.0
-
-        // 9. ¿Cuál es el resultado de (int) Math.round(3.7)?
-        /*int resultado = (int) Math.round(3.7);
-        System.out.println(resultado);
-         */
-        // El resultado es 4
-
-        //10. Dado byte b = 50;, ¿cómo lo convertirías a short?
-       /* byte b = 50;
-        short s = (short) b;
-        System.out.println(s);
-         */
-        // El resultado es 50
-// FIN CASTEO
-
-        //OPERADORES DE ASIGNACION
-        // 1. ¿Cuál es el valor de x después de la siguiente operación?
-        //int x = 10; x += 5;
-
-       /* int x = 10; x += 5;
-        System.out.println(x);
-        */
-        // El resultado es 15
-
-        // 2. Simplifica la siguiente expresión usando un operador de asignación compuesta:
-        //y = y * (x + 5);
-
-       /* int x = 0;
-        int y = 20;
-        y *= (x + 5);
-        System.out.println(y);
-         */
-        //El resultado es 100
-
-        // 3. ¿Cuál es el valor de a después de estas operaciones?
-        //int a = 15; a %= 4;
-       /* int a = 15;
-        a %= 4;
-        System.out.println(a);
-        */
-        // El resultado es 3
-
-        // 4. Escribe una expresión equivalente a x = x + y usando un operador de asignación compuesta.
-       /* int x = 4;
-        int y = 2;
-        x+=y;
-        System.out.println(x);
-       */
-        // El resultado es 6
-
-        // 5. Qué hace la siguiente operación? x ^= 2;
-        /*int x =1;
-        x^=2;
-        System.out.println(x);
-        */
-        // El resultado es 3
-
-        //FIN OPERACIONES ASIGNACION
-
-
-        //OPERADORES DE INCREMENTO Y DECREMENTO
-
-        //1. ¿Cuál es el valor de x e y después de estas operaciones?
-        //int x = 5; int y = ++x;
-
-        /*int x = 5;
-        System.out.println(x);
-        int y = ++x;
-        System.out.println(y);
-         */
-        //El resultado es 5 y 6
-
-        // 2. ¿Qué se imprimirá en la consola?
-        //int a = 5; System.out.println(a++); System.out.println(a);
-
-       /* int a = 5;
-        System.out.println(a++);
-        System.out.println(a);
-         */
-        // El resultado es 5 y 6
-
-        // 3.scribe código que use el operador de decremento para disminuir una variable count en 1.
-        /*int count = 20;
-        count --;
-        System.out.println(count);
-        */
-        //El resultado es 19
-
-        // 4. ¿Cuál es la diferencia entre ++i y i++?
-        /*int i = 5;
-        i++;
-        System.out.println(i);
-        */
-        // El resultado es 6
-
-        // 5. ¿Qué valor tendrá x después de esta operación?
-        /*int x = 3;
-         x++;
-        System.out.println(x);
-       */
-        //El resultado es 4
-        //FIN OPERADORES DE INCREMENTO Y DECREMENTO
-
-        //EJERCICIOS COMBINADOS
-
-        //Ejercicio 1
-       /* int i = 5;
-        i += ++i + i++ + ++i;
-        System.out.println(i);
-       */
-        // El resultado es 25
-
-        //Ejercicio 2
-       /*double myDouble = 6.5;
-        int myInt = (int) myDouble;
-        System.out.println(myInt);
-        System.out.println(++myInt);
-       */
-        //El resultado es 6 y 7
-
-
-        // Ejercicio 3
-        /*double d = 5.7;
-        int i = (int)d;
-        i *= 2;
-        System.out.println(i--);
-         */
-        //El resultado es 10
-
-        // Ejercicio 4
-       /* int i = 10;
-        double d = i;
-        d /= 2.0;
-        System.out.println(d);
-        */
-        //El resultado es 5.0
-
-        //Ejercicio 5
-        /*char c = 'X';
-        c += 32;
-        System.out.println(c);
-        */
-        //El resultado es X
-
-        //Ejercicio 6
-        long l = 12345L;
-        short s = (short) l;
-        s *= 3;
-        System.out.println(s);
-        // El resultado es -28501
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    }
-
+        Scanner scanner = new Scanner(System.in);
+        int opcionMenu = 0;
+        int opcionSubmenu = 0;
+        boolean salir = false;
+
+        while (!salir) {
+            main.mostrarMenuPrincipal();
+            opcionMenu = scanner.nextInt();
+            boolean salirSubmenu = false;
+
+            switch (opcionMenu) {
+                case 1:
+                    System.out.println("1. Casteo");
+
+
+                    while (!salirSubmenu) {
+                        main.mostrarSubmenuCasteo();
+                        opcionSubmenu = scanner.nextInt();
+
+                        switch (opcionSubmenu) {
+                            case 1:
+                                // ¿Cuál será el resultado de la siguiente operación?
+                                solve.casteo1;
+                                break;
+                            case 2:
+                                //2.  Dado char c = 'A';, ¿cómo convertirías c a su valor ASCII como un int?
+                                casteo2();
+                                break;
+                            case 3:
+                                // 3. ¿Qué valor se imprimirá?
+                                casteo3();
+                                break;
+                            case 4:
+                                // 4. Escribe código para convertir un String que contiene un número a un int.
+                                casteo4();
+                                break;
+                            case 5:
+                                // 5. ¿Cuál es el resultado de (int) (char) (byte) -1?
+                                casteo5();
+                                break;
+                            case 6:
+                                // 6. Convierte el número 65 a un char. ¿Qué carácter obtienes?
+                                casteo6();
+                                break;
+                            case 7:
+                                // 7. ¿Qué sucede si intentas asignar un long a un int sin casteo explícito?
+                                casteo7();
+                                break;
+                            case 8:
+                                //8. Escribe código para convertir un float a un String.
+                                casteo8();
+                                break;
+                            case 9:
+                                // 9. ¿Cuál es el resultado de (int) Math.round(3.7)?
+                                casteo9();
+                                break;
+                            case 10:
+                                //10. Dado byte b = 50;, ¿cómo lo convertirías a short?
+                                casteo10();
+                                break;
+                            case 11:
+                                System.out.println("Volviendo al menú principal.");
+                                salirSubmenu = true;
+                                break;
+                            default:
+                                System.out.println("Opción no válida. Inténtalo de nuevo.");
+                                break;
+                        }
+                    }
+                    break;
+                case 2:
+                    System.out.println("2. Operadores de Asignacion");
+
+                    while (!salirSubmenu) {
+                        mostrarSubmenuAsignacion();
+                        opcionSubmenu = scanner.nextInt();
+
+                        switch (opcionSubmenu) {
+                            case 1:
+                                // 1. ¿Cuál es el valor de x después de la siguiente operación?
+                                int x = 10;
+                                x += 5;
+                                System.out.println(x);
+                                break;
+                            case 2:
+                                // 2. Simplifica la siguiente expresión usando un operador de asignación compuesta:
+                                //y = y (s + 5);
+                                int s = 2;
+                                int y = 25;
+                                y *= (s + 5);
+                                System.out.println(y);
+                                break;
+                            case 3:
+                                // 3. ¿Cuál es el valor de a después de estas operaciones?
+                                //int a = 15; a %= 4;
+                                int a = 15;
+                                a %= 4;
+                                System.out.println(a);
+                                break;
+                            case 4:
+                                // 4. Escribe una expresión equivalente a x = x + y usando un operador de asignación compuesta.
+                                int h = 19;
+                                int b = 17;
+                                h+=b;
+                                System.out.println(h);
+                                break;
+                            case 5:
+                                // 5. Qué hace la siguiente operación? x ^= 2;
+                                int m =5;
+                                m^=2;
+                                System.out.println(m);
+                                break;
+                            case 6:
+                                System.out.println("Volviendo al menú principal.");
+                                salirSubmenu = true;
+                                break;
+                            default:
+                                System.out.println("Opción no válida. Inténtalo de nuevo.");
+                                break;
+                        }
+                    }
+                    break;
+                case 3:
+                    System.out.println("3. Operadores de Incremento y Decremento");
+
+                    while (!salirSubmenu) {
+                        mostrarSubmenuID();
+                        opcionSubmenu = scanner.nextInt();
+
+                        switch (opcionSubmenu) {
+                            case 1:
+                                //1. ¿Cuál es el valor de x e y después de estas operaciones?
+                                //int x = 5; int y = ++x;
+                                int x = 5;
+                                int y = ++x;
+                                System.out.println(x);
+                                System.out.println(y);
+                                break;
+                            case 2:
+                                // 2. ¿Qué se imprimirá en la consola?
+                                //int a = 5; System.out.println(a++); System.out.println(a);
+                                int a = 5;
+                                System.out.println(a++);
+                                System.out.println(a);
+                                break;
+                            case 3:
+                                // 3. Escribe código que use el operador de decremento para disminuir una variable count en 1.
+                                int count = 3;
+                                count--;
+                                System.out.println(count);
+                                break;
+                            case 4:
+                                // 4. ¿Cuál es la diferencia entre ++i y i++?
+                                int i = 7;
+                                ++i;
+                                System.out.println("Operacion antes de usar el valor"+i);
+                                int i2 = 7;
+                                i2++;
+                                System.out.println("Operacion despues de usar el valor"+i2);
+                                break;
+                            case 5:
+                                // 5. ¿Qué valor tendrá xf después de esta operación?
+                                int xf = 3;
+                                xf++;
+                                System.out.println(xf);
+                                break;
+                            case 6:
+                                System.out.println("Volviendo al menú principal.");
+                                salirSubmenu = true;
+                                break;
+                            default:
+                                System.out.println("Opción no válida. Inténtalo de nuevo.");
+                                break;
+                        }
+                    }
+                    break;
+                case 4:
+                    System.out.println("4. Ejercicios Combinados");
+                    while (!salirSubmenu) {
+                        mostrarSubmenuCombinados();
+                        opcionSubmenu = scanner.nextInt();
+
+                        switch (opcionSubmenu) {
+                            case 1:
+                                // ¿Cuál será el resultado de la siguiente operación?
+                                int x = (int) 5.89 + (int) 3.45;
+                                System.out.println(x);
+                                // El resultado es 8
+                                break;
+                            case 2:
+                                System.out.println("Realizando operación de resta...");
+                                // Aquí puedes implementar la lógica para la resta
+                                break;
+                            case 3:
+                                System.out.println("Realizando operación de resta...");
+                                // Aquí puedes implementar la lógica para la resta
+                                break;
+                            case 4:
+                                System.out.println("Realizando operación de resta...");
+                                // Aquí puedes implementar la lógica para la resta
+                                break;
+                            case 5:
+                                System.out.println("Realizando operación de resta...");
+                                // Aquí puedes implementar la lógica para la resta
+                                break;
+                            case 6:
+                                System.out.println("Realizando operación de resta...");
+                                // Aquí puedes implementar la lógica para la resta
+                                break;
+                            case 7:
+                                System.out.println("Realizando operación de resta...");
+                                // Aquí puedes implementar la lógica para la resta
+                                break;
+                            case 8:
+                                System.out.println("Realizando operación de resta...");
+                                // Aquí puedes implementar la lógica para la resta
+                                break;
+                            case 9:
+                                System.out.println("Realizando operación de resta...");
+                                // Aquí puedes implementar la lógica para la resta
+                                break;
+                            case 10:
+                                System.out.println("Realizando operación de resta...");
+                                // Aquí puedes implementar la lógica para la resta
+                                break;
+                            case 11:
+                                System.out.println("Volviendo al menú principal.");
+                                salirSubmenu = true;
+                                break;
+                            default:
+                                System.out.println("Opción no válida. Inténtalo de nuevo.");
+                                break;
+                        }
+                    }
+                    break;
+                case 5:
+                    System.out.println("Saliendo del programa.");
+                    salir = true;
+                    break;
+                default:
+                    System.out.println("Opción no válida. Inténtalo de nuevo.");
+                    break;
+            }
+        }
+        scanner.close();
 }
